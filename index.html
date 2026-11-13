@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="old-office-logo-Photoroom.png?v=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OffDep</title>
+    <script>document.documentElement.classList.add("is-loading");</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen" role="status" aria-live="polite">
+        <img class="loading-office-logo" src="office-wordmark-blue.png" alt="Office">
+        <div class="loading-content">
+            <h1 class="loading-brand" data-i18n="loadingBrand">OffDep</h1>
+            <div class="loading-dots" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <p class="loading-status" data-i18n="loadingStatus">Loading OffDep...</p>
+    </div>
+
+    <header class="app-header">
+        <a class="brand" href="/" data-view="home" aria-label="OffDep home">
+            <img src="office-logo.png" alt="OffDep">
+        </a>
+        <nav class="main-nav" aria-label="Main navigation" data-i18n-aria-label="mainNavigation">
+            <a href="/info" data-view="info" data-i18n="navInfo">Info</a>
+            <a href="/download" data-view="download" data-i18n="navDownload">Download</a>
+            <a href="https://github.com/misterder001-afk">Github</a>
+            <a href="/contact" data-view="contact" data-i18n="navContact">Contact</a>
+            <a href="/credits" data-view="credits" data-i18n="navCredits">Credits</a>
+            <a href="https://discord.gg/5n2zBzJfP">Discord</a>
+            <a href="https://www.donationalerts.com/r/mr_dep1" data-i18n="navDonate">Donate❤️</a>
+            <select class="language-select" id="language-select" aria-label="Select language" data-i18n-aria-label="languageSelectorLabel">
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+                <option value="de">Deutsch</option>
+                <option value="uk">Українська</option>
+                <option value="kk">Қазақша</option>
+                <option value="bg">Български</option>
+            </select>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="hero-card" id="home" data-view-panel>
+            <img class="hero-image" src="office-loading-screen.png" alt="Office screen showing “We're getting things ready”" data-i18n-alt="heroImageAlt">
+            <h1 data-i18n="homeTitle">Welcome to OffDep</h1>
+            <p data-i18n="homeDescription">Choose a tab above to explore the site.</p>
+            <a class="button-primary" href="/download" data-view="download" data-i18n="downloadForWindows">Download for Windows</a>
+        </section>
+
+        <section class="content-card" id="info" data-view-panel hidden>
+            <h2 data-i18n="infoTitle">Information</h2>
+            <p data-i18n="infoDescription">OffDep provides information about Office software and its versions.</p>
+        </section>
+
+        <section class="content-card" id="download" data-view-panel hidden>
+            <h2 data-i18n="office2013Title">Office 2013</h2>
+            <p data-i18n="office2013Description">Office 2013 is a version of Microsoft Office released in 2013. It includes applications such as Word, Excel, PowerPoint, and Outlook.</p>
+            <a class="button-download" href="https://download943.mediafire.com/vv8bignnqvlgWn3NqkyTz_pycEmMBTfoCDrP4TQXn4MGm0HHWBIibsMV3kfis-S4zGO_Pn4EOFJwjdD-UbwJe2HjHdPC-yC0h9Hq3sVhizXMa_C0VxsOrRO6AAnHcwYPC5bBGmn6l80nqqz8J9e4MMKbV8ITIIFk3CRbabv3JfE/xaz4ibo0b65hjf9/Office+Pro+Plus+2013.7z" target="_blank" rel="noopener noreferrer" data-i18n="office2013Download">Download Office 2013</a>
+        
+            <h2 data-i18n="office2016Title">Office 2016</h2>
+            <p data-i18n="office2016Description">Office 2016 is a version of Microsoft Office released in 2015. It includes applications such as Word, Excel, PowerPoint, and Outlook.</p>
+            <a class="button-download" href="https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=languagepack&language=en-us&platform=x64&source=O16LAP&version=O16GA" data-i18n="office2016Download">Download Office 2016</a>
+        
+            <h2 data-i18n="office2019Title">Office 2019</h2>
+            <p data-i18n="office2019Description">Office 2019 is a version of Microsoft Office released in 2018
+. It includes applications such as Word, Excel, PowerPoint, and Outlook.</p>
+            <a class="button-download" href="https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=languagepack&language=en-us&platform=x64&source=O16LAP&version=O16GA" data-i18n="office2019Download">Download Office 2019</a>
+
+            <h2 data-i18n="office2021Title">Office 2021</h2>
+            <p data-i18n="office2021Description">Office 2021 is a version of Microsoft Office released in 2020. It includes applications such as Word, Excel, PowerPoint, and Outlook.</p>
+            <a class="button-download" href="https://download851.mediafire.com/vgin5zcsf69gWpWaXtb0jroFygqq27ErvZLjMjtSxMekfybg4l0Ch6u5sEPDp8OYVb7ffv5pHidGaCqLYFp6oSXfyAuVUlS15S-wY-L3DEelCeR4YLGI6K-hgpGPf-z3LmWU1uQlJ2pCGlkV2qPGlhcKcrmMphQOWhrptZ4bPIs/qob8lo2xt8iyc9z/Office+Pro+Plus+2021.7z" data-i18n="office2021Download">Download Office 2021</a>
+
+            <h2 data-i18n="office2024Title">Office 2024</h2>
+            <p data-i18n="office2024Description">Office 2024 is the latest version of Microsoft Office, offering the most recent features and improvements.</p>
+            <a class="button-download" href="https://www.mediafire.com/file/gvwrriep7ulsr2e/Office_Pro_Plus_2024.7z/file" data-i18n="office2024Download">Download Office 2024</a>
+        </section>
+        <section class="content-card" id="github" data-view-panel hidden>
+            <h2 data-i18n="githubTitle">GitHub</h2>
+            <p data-i18n="githubDescription">Visit GitHub to find or publish the OffDep project repository.</p>
+            <a class="button-primary" href="https://github.com/misterder001-afk" target="_blank" rel="noopener noreferrer" data-i18n="githubOpen">Open GitHub</a>
+        </section>
+
+        <section class="content-card" id="contact" data-view-panel hidden>
+            <h2 data-i18n="contactTitle">Contact</h2>
+            <p data-i18n="contactDescription">Add your email address or social link here so visitors can contact you.</p>
+            
+        </section>
+        <section class="content-card" id="credits" data-view-panel hidden>
+            <h2 data-i18n="creditsTitle">Credits</h2>
+            <p data-i18n="creditsDescription">OffDep is a fan-made project inspired by classic Office branding and support content for Office installers and version info.</p>
+            <ul class="credits-list">
+                <li>OffDep project and design: MrDep001</li>
+                <li>Brand inspiration: Microsoft Office visual identity</li>
+                <li>Community support: GitHub and Discord contributors</li>
+            </ul>
+        </section>
+        <section class="content-card" id="discord" data-view-panel hidden>
+            <h2 data-i18n="discordTitle">Discord</h2>
+            <p data-i18n="discordDescription">Join the OffDep community on Discord.</p>
+            <a class="button-primary" href="https://discord.gg/5n2zBzJfP" target="_blank" rel="noopener noreferrer" data-i18n="discordJoin">Join Discord</a>
+        </section>
+        <section class="content-card" id="donate" data-view-panel hidden>
+            <h2 data-i18n="donateTitle">Donate</h2>
+            <p data-i18n="donateDescription">If you like OffDep and want to support its development, consider making a donation</p>
+            <a class="button-primary" href="https://www.donationalerts.com/r/mr_dep1" target="_blank" rel="noopener noreferrer" data-i18n="donateButton">Donate</a>
+        </section>
+    </main>
+
+    <footer class="site-footer" data-i18n="footer">©OffDep 2026. Don't created by Microsoft Corporation®.</footer>
+
+    <script>
+        const viewLinks = document.querySelectorAll("[data-view]");
+        const externalRedirectLinks = document.querySelectorAll('a[href*="github.com"], a[href*="discord.gg"], a[href*="donationalerts.com"]');
+        const viewPanels = document.querySelectorAll("[data-view-panel]");
+        const languageSelector = document.getElementById("language-select");
+        const loadingBrand = document.querySelector(".loading-brand");
+        const loadingStatus = document.querySelector(".loading-status");
+        const translations = {
+            en: {
+                pageTitle: "OffDep",
+                mainNavigation: "Main navigation",
+                languageSelectorLabel: "Select language",
+                loadingBrand: "OffDep",
+                loadingStatus: "Loading OffDep...",
+                redirecting: "Redirecting",
+                navInfo: "Info",
+                navDownload: "Download",
+                navContact: "Contact",
+                navCredits: "Credits",
+                navDonate: "Donate❤️",
+                heroImageAlt: "Office screen showing “We're getting things ready”",
+                homeTitle: "Welcome to OffDep",
+                homeDescription: "Choose a tab above to explore the site.",
+                downloadForWindows: "Download for Windows",
+                infoTitle: "Information",
+                infoDescription: "OffDep provides information about Office software and its versions.",
+                office2013Title: "Office 2013",
+                office2013Description: "Office 2013 is a version of Microsoft Office released in 2013. It includes applications such as Word, Excel, PowerPoint, and Outlook.",
+                office2013Download: "Download Office 2013",
+                office2016Title: "Office 2016",
+                office2016Description: "Office 2016 is a version of Microsoft Office released in 2015. It includes applications such as Word, Excel, PowerPoint, and Outlook.",
+                office2016Download: "Download Office 2016",
+                office2019Title: "Office 2019",
+                office2019Description: "Office 2019 is a version of Microsoft Office released in 2018. It includes applications such as Word, Excel, PowerPoint, and Outlook.",
+                office2019Download: "Download Office 2019",
+                githubTitle: "GitHub",
+                githubDescription: "Visit GitHub to find or publish the OffDep project repository.",
+                githubOpen: "Open GitHub",
+                contactTitle: "Contact",
+                contactDescription: "Email: offdep.support@gmail.com",
+                creditsTitle: "Credits",
+                creditsDescription: "OffDep is a fan-made project inspired by classic Office branding and support content for Office installers and version info.",
+                discordTitle: "Discord",
+                discordDescription: "Join the OffDep community on Discord.",
+                discordJoin: "Join Discord",
+                donateTitle: "Donate",
+                donateDescription: "If you like OffDep and want to support its development, consider making a donation.",
+                donateButton: "Donate",
+                footer: "© OffDep 2026. Not created by Microsoft Corporation®."
+            },
+            ru: {
+                pageTitle: "OffDep",
+                mainNavigation: "Главная навигация",
+                languageSelectorLabel: "Выбрать язык",
+                loadingBrand: "OffDep",
+                loadingStatus: "Загрузка OffDep...",
+                redirecting: "Перенаправление",
+                navInfo: "Информация",
+                navDownload: "Скачать",
+                navContact: "Контакты",
+                navCredits: "Создатели",
+                navDonate: "Поддержать❤️",
+                heroImageAlt: "Экран Office с надписью «Подготовка к работе»",
+                homeTitle: "Добро пожаловать в OffDep",
+                homeDescription: "Выберите вкладку выше, чтобы познакомиться с сайтом.",
+                downloadForWindows: "Скачать для Windows",
+                infoTitle: "Информация",
+                infoDescription: "OffDep рассказывает о программах Office и их версиях.",
+                office2013Title: "Office 2013",
+                office2013Description: "Office 2013 — версия Microsoft Office, выпущенная в 2013 году. В неё входят Word, Excel, PowerPoint и Outlook.",
+                office2013Download: "Скачать Office 2013",
+                office2016Title: "Office 2016",
+                office2016Description: "Office 2016 — версия Microsoft Office, выпущенная в 2015 году. В неё входят Word, Excel, PowerPoint и Outlook.",
+                office2016Download: "Скачать Office 2016",
+                office2019Title: "Office 2019",
+                office2019Description: "Office 2019 — версия Microsoft Office, выпущенная в 2018 году. В неё входят Word, Excel, PowerPoint и Outlook.",
+                office2019Download: "Скачать Office 2019",
+                githubTitle: "GitHub",
+                githubDescription: "Посетите GitHub, чтобы найти репозиторий проекта OffDep или опубликовать его.",
+                githubOpen: "Открыть GitHub",
+                contactTitle: "Контакты",
+                contactDescription: "Email: offdep.support@gmail.com",
+                creditsTitle: "Создатели",
+                creditsDescription: "OffDep — это фан-проект, вдохновлённый классическим оформлением Office и информацией о версиях и установщиках Office.",
+                discordTitle: "Discord",
+                discordDescription: "Присоединяйтесь к сообществу OffDep в Discord.",
+                discordJoin: "Присоединиться к Discord",
+                donateTitle: "Поддержать проект",
+                donateDescription: "Если вам нравится OffDep и вы хотите поддержать его развитие, сделайте пожертвование.",
+                donateButton: "Пожертвовать",
+                footer: "© OffDep 2026. Проект не создан корпорацией Microsoft®."
+            },
+            de: {
+                pageTitle: "OffDep",
+                mainNavigation: "Hauptnavigation",
+                languageSelectorLabel: "Sprache auswählen",
+                loadingBrand: "OffDep",
+                loadingStatus: "OffDep wird geladen...",
+                redirecting: "Weiterleitung",
+                navInfo: "Informationen",
+                navDownload: "Download",
+                navContact: "Kontakt",
+                navCredits: "Mitwirkende",
+                navDonate: "Unterstützen❤️",
+                heroImageAlt: "Office-Bildschirm mit der Meldung „Wir bereiten alles vor“",
+                homeTitle: "Willkommen bei OffDep",
+                homeDescription: "Wähle oben einen Tab, um die Website zu erkunden.",
+                downloadForWindows: "Für Windows herunterladen",
+                infoTitle: "Informationen",
+                infoDescription: "OffDep bietet Informationen zu Office-Software und ihren Versionen.",
+                office2013Title: "Office 2013",
+                office2013Description: "Office 2013 ist eine 2013 veröffentlichte Version von Microsoft Office. Sie umfasst Word, Excel, PowerPoint und Outlook.",
+                office2013Download: "Office 2013 herunterladen",
+                office2016Title: "Office 2016",
+                office2016Description: "Office 2016 ist eine 2015 veröffentlichte Version von Microsoft Office. Sie umfasst Word, Excel, PowerPoint und Outlook.",
+                office2016Download: "Office 2016 herunterladen",
+                office2019Title: "Office 2019",
+                office2019Description: "Office 2019 ist eine 2018 veröffentlichte Version von Microsoft Office. Sie umfasst Word, Excel, PowerPoint und Outlook.",
+                office2019Download: "Office 2019 herunterladen",
+                githubTitle: "GitHub",
+                githubDescription: "Besuche GitHub, um das OffDep-Projektrepository zu finden oder zu veröffentlichen.",
+                githubOpen: "GitHub öffnen",
+                contactTitle: "Kontakt",
+                contactDescription: "Email: offdep.support@gmail.com",
+                creditsDescription: "OffDep ist ein Fan-Projekt, das von klassischem Office-Design und Support-Inhalten zu Office-Installern und Versionsinformationen inspiriert ist.",
+                discordTitle: "Discord",
+                discordDescription: "Tritt der OffDep-Community auf Discord bei.",
+                discordJoin: "Discord beitreten",
+                donateTitle: "Projekt unterstützen",
+                donateDescription: "Wenn dir OffDep gefällt und du die Entwicklung unterstützen möchtest, kannst du spenden.",
+                donateButton: "Spenden",
+                footer: "© OffDep 2026. Nicht von der Microsoft Corporation® erstellt."
+            },
+            uk: {
+                pageTitle: "OffDep",
+                mainNavigation: "Головна навігація",
+                languageSelectorLabel: "Вибрати мову",
+                loadingBrand: "OffDep",
+                loadingStatus: "Завантаження OffDep...",
+                redirecting: "Перенапрямок",
+                navInfo: "Інформація",
+                navDownload: "Завантажити",
+                navContact: "Контакти",
+                navCredits: "Подяки",
+                navDonate: "Підтримати❤️",
+                heroImageAlt: "Екран Office з написом «Готуємо все до роботи»",
+                homeTitle: "Ласкаво просимо до OffDep",
+                homeDescription: "Виберіть вкладку вище, щоб переглянути сайт.",
+                downloadForWindows: "Завантажити для Windows",
+                infoTitle: "Інформація",
+                infoDescription: "OffDep надає інформацію про програмне забезпечення Office та його версії.",
+                office2013Title: "Office 2013",
+                office2013Description: "Office 2013 — версія Microsoft Office, випущена у 2013 році. До неї входять Word, Excel, PowerPoint і Outlook.",
+                office2013Download: "Завантажити Office 2013",
+                office2016Title: "Office 2016",
+                office2016Description: "Office 2016 — версія Microsoft Office, випущена у 2015 році. До неї входять Word, Excel, PowerPoint і Outlook.",
+                office2016Download: "Завантажити Office 2016",
+                office2019Title: "Office 2019",
+                office2019Description: "Office 2019 — версія Microsoft Office, випущена у 2018 році. До неї входять Word, Excel, PowerPoint і Outlook.",
+                office2019Download: "Завантажити Office 2019",
+                githubTitle: "GitHub",
+                githubDescription: "Відвідайте GitHub, щоб знайти репозиторій проєкту OffDep або опублікувати його.",
+                githubOpen: "Відкрити GitHub",
+                contactTitle: "Контакти",
+                contactDescription: "Email: offdep.support@gmail.com",
+                creditsTitle: "Подяки",
+                creditsDescription: "OffDep — це фан-проєкт, натхненний класичним оформленням Office та інформацією про версії та інсталятори Office.",
+                discordTitle: "Discord",
+                discordDescription: "Приєднуйтеся до спільноти OffDep у Discord.",
+                discordJoin: "Приєднатися до Discord",
+                donateTitle: "Підтримати проєкт",
+                donateDescription: "Якщо вам подобається OffDep і ви хочете підтримати його розвиток, зробіть пожертву.",
+                donateButton: "Зробити пожертву",
+                footer: "© OffDep 2026. Проєкт не створений корпорацією Microsoft®."
+            },
+            kk: {
+                pageTitle: "OffDep",
+                mainNavigation: "Негізгі мәзір",
+                languageSelectorLabel: "Тілді таңдау",
+                loadingBrand: "OffDep",
+                loadingStatus: "OffDep жүктелуде...",
+                redirecting: "Бағыттау",
+                navInfo: "Ақпарат",
+                navDownload: "Жүктеп алу",
+                navContact: "Байланыс",
+                navCredits: "Қосқан адамдар",
+                navDonate: "Қолдау көрсету❤️",
+                heroImageAlt: "Office экранында «Барлығын дайындап жатырмыз» деген жазу",
+                homeTitle: "OffDep сайтына қош келдіңіз",
+                homeDescription: "Сайтты көру үшін жоғарыдағы бөлімді таңдаңыз.",
+                downloadForWindows: "Windows үшін жүктеп алу",
+                infoTitle: "Ақпарат",
+                infoDescription: "OffDep Office бағдарламалары мен олардың нұсқалары туралы ақпарат береді.",
+                office2013Title: "Office 2013",
+                office2013Description: "Office 2013 — 2013 жылы шыққан Microsoft Office нұсқасы. Оның құрамына Word, Excel, PowerPoint және Outlook кіреді.",
+                office2013Download: "Office 2013 нұсқасын жүктеп алу",
+                office2016Title: "Office 2016",
+                office2016Description: "Office 2016 — 2015 жылы шыққан Microsoft Office нұсқасы. Оның құрамына Word, Excel, PowerPoint және Outlook кіреді.",
+                office2016Download: "Office 2016 нұсқасын жүктеп алу",
+                office2019Title: "Office 2019",
+                office2019Description: "Office 2019 — 2018 жылы шыққан Microsoft Office нұсқасы. Оның құрамына Word, Excel, PowerPoint және Outlook кіреді.",
+                office2019Download: "Office 2019 нұсқасын жүктеп алу",
+                githubTitle: "GitHub",
+                githubDescription: "OffDep жобасының репозиторийін табу немесе жариялау үшін GitHub сайтына өтіңіз.",
+                githubOpen: "GitHub сайтын ашу",
+                contactTitle: "Байланыс",
+                contactDescription: "Email: offdep.support@gmail.com",
+                creditsTitle: "Қосқан адамдар",
+                creditsDescription: "OffDep — классикалық Office стилі мен Office орнатқыштары мен нұсқалар туралы ақпараттан шабыттанған фан-проект.",
+                discordTitle: "Discord",
+                discordDescription: "Discord-тағы OffDep қауымдастығына қосылыңыз.",
+                discordJoin: "Discord-қа қосылу",
+                donateTitle: "Жобаны қолдау",
+                donateDescription: "OffDep сізге ұнаса және оның дамуына көмектескіңіз келсе, қайырымдылық жасаңыз.",
+                donateButton: "Қайырымдылық жасау",
+                footer: "© OffDep 2026. Жобаны Microsoft® корпорациясы жасамаған."
+            },
+            bg: {
+                pageTitle: "OffDep",
+                mainNavigation: "Основна навигация",
+                languageSelectorLabel: "Изберете език",
+                loadingBrand: "OffDep",
+                loadingStatus: "OffDep се зарежда...",
+                redirecting: "Пренасочване",
+                navInfo: "Информация",
+                navDownload: "Изтегляне",
+                navContact: "Контакт",
+                navCredits: "Заслуги",
+                navDonate: "Подкрепи❤️",
+                heroImageAlt: "Екран на Office със съобщение „Подготвяме всичко“",
+                homeTitle: "Добре дошли в OffDep",
+                homeDescription: "Изберете раздел по-горе, за да разгледате сайта.",
+                downloadForWindows: "Изтегляне за Windows",
+                infoTitle: "Информация",
+                infoDescription: "OffDep предоставя информация за софтуера Office и неговите версии.",
+                office2013Title: "Office 2013",
+                office2013Description: "Office 2013 е версия на Microsoft Office, издадена през 2013 г. Тя включва Word, Excel, PowerPoint и Outlook.",
+                office2013Download: "Изтегляне на Office 2013",
+                office2016Title: "Office 2016",
+                office2016Description: "Office 2016 е версия на Microsoft Office, издадена през 2015 г. Тя включва Word, Excel, PowerPoint и Outlook.",
+                office2016Download: "Изтегляне на Office 2016",
+                office2019Title: "Office 2019",
+                office2019Description: "Office 2019 е версия на Microsoft Office, издадена през 2018 г. Тя включва Word, Excel, PowerPoint и Outlook.",
+                office2019Download: "Изтегляне на Office 2019",
+                githubTitle: "GitHub",
+                githubDescription: "Посетете GitHub, за да намерите или публикувате хранилището на проекта OffDep.",
+                githubOpen: "Отваряне на GitHub",
+                contactTitle: "Контакт",
+                contactDescription: "Email: offdep.support@gmail.com",
+                creditsTitle: "Заслуги",
+                creditsDescription: "OffDep е фан-проект, вдъхновен от класическото оформление на Office и информация за инсталатори и версии на Office.",
+                discordTitle: "Discord",
+                discordDescription: "Присъединете се към общността на OffDep в Discord.",
+                discordJoin: "Присъединяване към Discord",
+                donateTitle: "Подкрепете проекта",
+                donateDescription: "Ако харесвате OffDep и искате да подкрепите развитието му, направете дарение.",
+                donateButton: "Дарете",
+                footer: "© OffDep 2026. Проектът не е създаден от Microsoft Corporation®."
+            }
+        };
+
+        function setLanguage(language) {
+            const selectedLanguage = Object.prototype.hasOwnProperty.call(translations, language) ? language : "en";
+            const selectedTranslations = translations[selectedLanguage];
+
+            document.documentElement.lang = selectedLanguage;
+            document.title = selectedTranslations.pageTitle;
+            languageSelector.value = selectedLanguage;
+
+            document.querySelectorAll("[data-i18n]").forEach((element) => {
+                const translation = selectedTranslations[element.dataset.i18n];
+                if (typeof translation !== "string") {
+                    throw new Error(`Missing ${selectedLanguage} translation: ${element.dataset.i18n}`);
+                }
+                element.textContent = translation;
+            });
+
+            document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+                const translation = selectedTranslations[element.dataset.i18nAriaLabel];
+                if (typeof translation !== "string") {
+                    throw new Error(`Missing ${selectedLanguage} translation: ${element.dataset.i18nAriaLabel}`);
+                }
+                element.setAttribute("aria-label", translation);
+            });
+
+            document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+                const translation = selectedTranslations[element.dataset.i18nAlt];
+                if (typeof translation !== "string") {
+                    throw new Error(`Missing ${selectedLanguage} translation: ${element.dataset.i18nAlt}`);
+                }
+                element.setAttribute("alt", translation);
+            });
+
+            if (document.documentElement.classList.contains("is-loading")) {
+                const isRedirectLoading = document.body.dataset.loadingMode === "redirect";
+                loadingBrand.textContent = isRedirectLoading ? selectedTranslations.redirecting : selectedTranslations.loadingBrand;
+                loadingStatus.textContent = isRedirectLoading ? selectedTranslations.redirecting : selectedTranslations.loadingStatus;
+            }
+
+            try {
+                window.localStorage.setItem("offdep-language", selectedLanguage);
+            } catch (error) {
+                console.error("Could not save the language preference.", error);
+            }
+        }
+
+        let initialLanguage = "en";
+        try {
+            const savedLanguage = window.localStorage.getItem("offdep-language");
+            if (Object.prototype.hasOwnProperty.call(translations, savedLanguage)) {
+                initialLanguage = savedLanguage;
+            }
+        } catch (error) {
+            console.error("Could not read the saved language preference.", error);
+        }
+
+        languageSelector.addEventListener("change", () => {
+            setLanguage(languageSelector.value);
+        });
+        setLanguage(initialLanguage);
+
+        let navigationTransitionTimer = null;
+
+        function setLoadingState(mode) {
+            document.body.dataset.loadingMode = mode;
+            const selectedTranslations = translations[languageSelector.value] || translations.en;
+            loadingBrand.textContent = mode === "redirect" ? selectedTranslations.redirecting : selectedTranslations.loadingBrand;
+            loadingStatus.textContent = mode === "redirect" ? selectedTranslations.redirecting : selectedTranslations.loadingStatus;
+        }
+
+        function showLoadingScreen(mode = "default") {
+            document.documentElement.classList.add("is-loading");
+            setLoadingState(mode);
+        }
+
+        function hideLoadingScreen() {
+            document.documentElement.classList.remove("is-loading");
+            document.body.removeAttribute("data-loading-mode");
+        }
+
+        function showView(viewId, updateHistory) {
+            let selectedPanel = document.getElementById(viewId);
+            if (!selectedPanel || !selectedPanel.hasAttribute("data-view-panel")) {
+                viewId = "home";
+                selectedPanel = document.getElementById(viewId);
+            }
+
+            viewPanels.forEach((panel) => {
+                panel.hidden = panel !== selectedPanel;
+            });
+
+            viewLinks.forEach((link) => {
+                if (link.closest(".main-nav")) {
+                    if (link.dataset.view === viewId) {
+                        link.setAttribute("aria-current", "page");
+                    } else {
+                        link.removeAttribute("aria-current");
+                    }
+                }
+            });
+
+            if (updateHistory) {
+                const nextUrl = viewId === "home" ? "/" : `/${viewId}`;
+                const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+                if (currentUrl !== nextUrl) {
+                    window.history.pushState(null, "", nextUrl);
+                }
+            }
+        }
+
+        function navigateToView(viewId, updateHistory) {
+            window.clearTimeout(navigationTransitionTimer);
+            showLoadingScreen("default");
+
+            navigationTransitionTimer = window.setTimeout(() => {
+                showView(viewId, updateHistory);
+                hideLoadingScreen();
+            }, 260);
+        }
+
+        externalRedirectLinks.forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                const redirectUrl = link.href;
+                showLoadingScreen("redirect");
+
+                const redirectWindow = window.open(redirectUrl, "_blank", "noopener,noreferrer");
+                window.setTimeout(() => {
+                    if (redirectWindow) {
+                        redirectWindow.focus();
+                    } else {
+                        window.location.href = redirectUrl;
+                    }
+                    hideLoadingScreen();
+                }, 320);
+            });
+        });
+
+        viewLinks.forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                navigateToView(link.dataset.view, true);
+            });
+        });
+
+        function getViewFromLocation() {
+            const route = window.location.pathname.replace(/\/+$/, "").slice(1);
+            return route || window.location.hash.slice(1) || "home";
+        }
+
+        window.addEventListener("popstate", () => {
+            navigateToView(getViewFromLocation(), false);
+        });
+
+        showView(getViewFromLocation(), false);
+
+        if (document.readyState === "complete") {
+            hideLoadingScreen();
+        } else {
+            window.addEventListener("load", hideLoadingScreen, { once: true });
+        }
+    </script>
+</body>
+</html>
